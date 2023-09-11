@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+section {
+  margin-top: 200px;
+}
+
+.nav-container {
+  color: white;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+.nav-container .title {
+  font-size: 3rem;
+}
+.nav-container .title span {
+  color: crimson;
+}
+.nav-container ul {
+  display: flex;
+  list-style: none;
+}
+.nav-container ul li {
+  margin: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.nav-container ul li:hover {
+  color: crimson;
+}
+
+.home-container {
+  width: 80%;
+  height: 700px;
+  color: white;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-container h2 {
+  font-size: 4rem;
+}
+.home-container h2 span {
+  color: crimson;
+}
+.home-container img {
+  border-radius: 10px;
+  border: 3px solid crimson;
+}
+
+.about-section {
+  width: 80%;
+  height: 700px;
+  color: white;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-section img {
+  border-radius: 10px;
+  border: 3px solid crimson;
+}
+.about-section .aboutme {
+  width: 630px;
+}
+.about-section .aboutme .title {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+.about-section .aboutme .title span {
+  color: crimson;
+}
+.about-section .aboutme p {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+.project-section {
+  width: 80%;
+  height: 700px;
+  color: white;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.project-section .title {
+  font-size: 3.5rem;
+  margin-bottom: 30px;
+}
+.project-section .title span {
+  color: crimson;
+}
+.project-section .slide-container {
+  display: flex;
+  align-items: center;
+}
+.project-section .slide-container i {
+  font-size: 5rem;
+  transition: 0.1s ease-in-out;
+  cursor: pointer;
+  margin: 20px;
+}
+.project-section .slide-container .fa-arrow-left {
+  visibility: hidden;
+}
+.project-section .slide-container i:hover {
+  color: crimson;
+}
+.project-section .slide-container .box {
+  height: 603px;
+  width: 1003px;
+  border: 4px solid crimson;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.project-section .slide-container .box .imgs-container {
+  display: flex;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+  right: 0px;
+}
+.project-section .slide-container .box .imgs-container img {
+  border-radius: 10px;
+}/*# sourceMappingURL=style.css.map */
