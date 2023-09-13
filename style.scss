@@ -68,6 +68,37 @@ section{
         span{
             color: crimson;
         }
+        
+    }
+    .contact-btn {
+        display: flex;
+        justify-content: center;
+        background-color: crimson;
+        margin-top: 30px;
+        border-radius: 5px;
+        :hover{
+            color: crimson;
+            background-color: white;
+        }
+      
+       
+       a{
+        padding:0.6rem;
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+        border-radius: 5px;
+        width: 170px;
+        height: 100%;
+        background-color: inherit;
+        text-decoration: none;
+        font-size: 2rem;
+        color: white;
+        letter-spacing: 1px;
+        transition: 0.3s ease-in-out;
+        
+     
+
+       }
     }
     img{
         border-radius: 10px;
@@ -107,14 +138,22 @@ section{
 
    .project-section{
     @include section();
-    justify-content: center;
-    flex-direction: column;
+    align-items: flex-start;
+   
+
+  
     .title{
-        font-size: 3.5rem;
+        font-size: 3rem;
         margin-bottom: 30px;
         span{
             color: crimson;
         }
+    
+    }
+   
+    .project-title{
+        font-size: 2rem;
+        transition: 1s ease-in-out;
     }
 .slide-container{
     display: flex;
@@ -135,8 +174,8 @@ section{
         color: crimson;
     }
     .box{
-        height: 603px;
-        width: 1003px;
+        height: 503px;
+        width: 703px;
         border: 4px solid  crimson;
         border-radius: 10px;
         display: flex;
@@ -148,14 +187,14 @@ section{
            display: flex; 
            position: absolute;
            transition: 0.5s ease-in-out;
-           right: 0px;
+           left: 0px;
         
 
             
             
             img{
                 border-radius: 10px;
-           
+        
             }
         }
     
@@ -163,4 +202,21 @@ section{
 }
     
  
+   }
+
+.contact-section{
+    @include section();
+    img{
+        border-radius: 10px;
+        border: 3px solid  crimson;
+    }
+}
+
+
+   .footer-section{
+    .box-container{
+width: 100%;
+height: 100px;
+background-color: crimson;
+    }
    }

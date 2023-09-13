@@ -58,6 +58,31 @@ section {
 .home-container h2 span {
   color: crimson;
 }
+.home-container .contact-btn {
+  display: flex;
+  justify-content: center;
+  background-color: crimson;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+.home-container .contact-btn :hover {
+  color: crimson;
+  background-color: white;
+}
+.home-container .contact-btn a {
+  padding: 0.6rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  border-radius: 5px;
+  width: 170px;
+  height: 100%;
+  background-color: inherit;
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+  letter-spacing: 1px;
+  transition: 0.3s ease-in-out;
+}
 .home-container img {
   border-radius: 10px;
   border: 3px solid crimson;
@@ -99,15 +124,18 @@ section {
   margin: auto;
   justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  align-items: flex-start;
 }
 .project-section .title {
-  font-size: 3.5rem;
+  font-size: 3rem;
   margin-bottom: 30px;
 }
 .project-section .title span {
   color: crimson;
+}
+.project-section .project-title {
+  font-size: 2rem;
+  transition: 1s ease-in-out;
 }
 .project-section .slide-container {
   display: flex;
@@ -126,8 +154,8 @@ section {
   color: crimson;
 }
 .project-section .slide-container .box {
-  height: 603px;
-  width: 1003px;
+  height: 503px;
+  width: 703px;
   border: 4px solid crimson;
   border-radius: 10px;
   display: flex;
@@ -139,8 +167,28 @@ section {
   display: flex;
   position: absolute;
   transition: 0.5s ease-in-out;
-  right: 0px;
+  left: 0px;
 }
 .project-section .slide-container .box .imgs-container img {
   border-radius: 10px;
+}
+
+.contact-section {
+  width: 80%;
+  height: 700px;
+  color: white;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-section img {
+  border-radius: 10px;
+  border: 3px solid crimson;
+}
+
+.footer-section .box-container {
+  width: 100%;
+  height: 100px;
+  background-color: crimson;
 }/*# sourceMappingURL=style.css.map */
