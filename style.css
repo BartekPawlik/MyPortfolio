@@ -86,6 +86,8 @@ section {
 .home-container img {
   border-radius: 10px;
   border: 3px solid crimson;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .about-section {
@@ -125,6 +127,7 @@ section {
   justify-content: space-between;
   align-items: center;
   align-items: flex-start;
+  justify-content: space-between;
 }
 .project-section .title {
   font-size: 3rem;
@@ -133,9 +136,15 @@ section {
 .project-section .title span {
   color: crimson;
 }
+.project-section .desc {
+  margin-top: 10px;
+  max-width: 400px;
+  font-size: 1.5rem;
+}
 .project-section .project-title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   transition: 1s ease-in-out;
+  min-width: 350px;
 }
 .project-section .slide-container {
   display: flex;
@@ -147,7 +156,10 @@ section {
   cursor: pointer;
   margin: 20px;
 }
-.project-section .slide-container .fa-arrow-left {
+.project-section .slide-container .fa-solid {
+  font-size: 3rem;
+}
+.project-section .slide-container .fa-angles-left {
   visibility: hidden;
 }
 .project-section .slide-container i:hover {
@@ -173,7 +185,20 @@ section {
   border-radius: 10px;
 }
 
-.contact-section {
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .title-contact {
+  font-size: 2rem;
+  color: white;
+  letter-spacing: 1px;
+}
+.container .contact-section {
+  display: flex;
+  justify-content: space-between;
   width: 80%;
   height: 700px;
   color: white;
@@ -182,7 +207,38 @@ section {
   justify-content: space-between;
   align-items: center;
 }
-.contact-section img {
+.container .contact-section .contact-container {
+  display: grid;
+  width: 600px;
+  height: 600px;
+  grid-template-columns: 1fr 1fr;
+  font-size: 1rem;
+  gap: 15px;
+}
+.container .contact-section .contact-container .panel {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px;
+  text-decoration: none;
+  font-size: 1.6rem;
+  transition: 0.2s ease-in-out;
+  background-color: crimson;
+  cursor: pointer;
+}
+.container .contact-section .contact-container .panel p, .container .contact-section .contact-container .panel i, .container .contact-section .contact-container .panel a {
+  font-size: 3rem;
+  background-color: transparent;
+  background-color: transparent;
+  text-decoration: none;
+  color: white;
+  padding: 2px;
+  background-color: inherit;
+}
+.container .contact-section img {
   border-radius: 10px;
   border: 3px solid crimson;
 }

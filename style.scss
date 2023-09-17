@@ -103,6 +103,7 @@ section{
     img{
         border-radius: 10px;
         border: 3px solid  crimson;
+        object-fit: cover
     
     }
 
@@ -139,21 +140,30 @@ section{
    .project-section{
     @include section();
     align-items: flex-start;
+    justify-content: space-between;
    
 
   
     .title{
         font-size: 3rem;
         margin-bottom: 30px;
+       
         span{
             color: crimson;
         }
     
     }
-   
+   .desc{
+    margin-top: 10px;
+    max-width: 400px;
+    font-size: 1.5rem;
+
+   }
     .project-title{
-        font-size: 2rem;
+        font-size: 2.5rem;
         transition: 1s ease-in-out;
+     
+       min-width: 350px;
     }
 .slide-container{
     display: flex;
@@ -164,8 +174,10 @@ section{
         cursor: pointer;
         margin: 20px;
     }
-
-    .fa-arrow-left{
+    .fa-solid{
+        font-size: 3rem;
+    }
+    .fa-angles-left{
        visibility: hidden;
     }
 
@@ -203,14 +215,72 @@ section{
     
  
    }
+   .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .title-contact{
+            font-size: 2rem;
+            color: white;
+            letter-spacing: 1px;
+        }
+        .contact-section{
+            display: flex;
+            justify-content: space-between;
+        
+        
+            @include section();
+            .contact-container{
+                display: grid;
+                width: 600px;
+                height: 600px;
+                grid-template-columns: 1fr 1fr;
+                font-size: 1rem;
+                gap: 15px;
 
-.contact-section{
-    @include section();
-    img{
-        border-radius: 10px;
-        border: 3px solid  crimson;
-    }
-}
+               
+                .panel{
+                    width: 300px;
+                    height: 300px;
+                    display: flex;          
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 0px;
+                    text-decoration: none;
+                    font-size: 1.6rem;
+                    transition: 0.2s ease-in-out;
+                    background-color: crimson;
+                    cursor: pointer;
+                 
+                    
+                   
+                    p,i,a{
+                        font-size: 3rem;
+                        background-color: transparent;
+                        background-color: transparent;
+                        text-decoration: none;
+                       color: white;
+                        padding: 2px;
+                        background-color: inherit;
+                    }
+                   
+                  }
+                
+           
+              
+             
+              
+            }
+            img{
+                border-radius: 10px;
+                border: 3px solid  crimson;
+            }
+        }
+   }
+ 
+
 
 
    .footer-section{
@@ -220,3 +290,49 @@ height: 100px;
 background-color: crimson;
     }
    }
+
+
+
+//    @keyframes move {
+//     from {
+//       opacity: 0;
+//     }
+//     3% {
+//       opacity: 0.2;
+//     }
+//     6% {
+//       opacity: 0.4;
+//     }
+//     8% {
+//       opacity: 0.6;
+//     }
+//     10% {
+//       opacity: 0.8;
+//     }
+//     50% {
+//       opacity: 1;
+//     }
+//     90% {
+//       opacity: 0.8;
+//     }
+//     93% {
+//       opacity: 0.6;
+//     }
+//     96% {
+//       opacity: 0.4;
+//     }
+//     98% {
+//       opacity: 0.2;
+//     }
+//     to {
+//       opacity: 0;
+//     }
+//   }
+  
+//    .animation {
+//     animation-name: move;
+//     animation-delay: 0s;
+//     animation-duration: 2s;
+//     animation-timing-function: linear;
+//     animation-iteration-count: 1;
+//   }
