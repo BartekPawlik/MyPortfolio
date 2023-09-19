@@ -37,7 +37,8 @@ const leftArrow = document.querySelector(".fa-angles-left")
 const projectbox = document.querySelector(".imgs-container")
 const projectTitle = document.querySelector(".project-title")
 const descs = document.querySelector('.desc')
-const panels = document.querySelectorAll('.panel')
+const panels = document.querySelectorAll('.card-inner')
+
 let px = 701
 let sum = 0
 let pictureNumber = 0
@@ -87,7 +88,8 @@ function checkInfo(){
 panels.forEach(panel =>{
     panel.addEventListener("click", () =>{
        this.panel = panel
-       console.log(panel)
+
+       panel.classList.toggle('is-fliped')
     })
 })
 
