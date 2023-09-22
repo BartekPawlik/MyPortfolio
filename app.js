@@ -38,6 +38,7 @@ const projectbox = document.querySelector(".imgs-container")
 const projectTitle = document.querySelector(".project-title")
 const descs = document.querySelector('.desc')
 const panels = document.querySelectorAll('.card-inner')
+const arrowUp = document.querySelector(".arrow")
 
 let px = 701
 let sum = 0
@@ -45,7 +46,11 @@ let pictureNumber = 0
 
 
 checkInfo()
+
+
+
 rightArrow.addEventListener("click", ()=>{
+  addAnimation()
     pictureNumber++
     console.log(pictureNumber)
     sum -= px
@@ -54,46 +59,59 @@ rightArrow.addEventListener("click", ()=>{
     projectbox.style.left = `${sum}px`
     if(sum == -2804){
         rightArrow.style.visibility = "hidden"
+       projectTitle
     }
-    projectTitle.style.opacity ="1"
-
-    
-    checkInfo()
- 
+      checkInfo() 
+      timeOut()
+   
 })
 
 leftArrow.addEventListener("click", ()=>{
+    addAnimation()
     pictureNumber--
     sum += px
+     
     rightArrow.style.visibility = "unset";
     projectbox.style.left = `${sum}px`
     if(sum == 0){
         leftArrow.style.visibility = "hidden"
-    }
-   
+    }  
     checkInfo()
-    projectTitle.style.opacity ="1"
-
-
+   timeOut()
 })
 
-
-
 function checkInfo(){
+   
     projectTitle.innerHTML = titles[pictureNumber].title
     descs.innerHTML = titles[pictureNumber].desc
+   
     
 
 }
+
 panels.forEach(panel =>{
     panel.addEventListener("click", () =>{
        this.panel = panel
 
-       panel.classList.toggle('is-fliped')
+      panel.style.transform = panel.style.transform === "rotateY(180deg)" ? '' : 'rotateY(180deg)';
     })
 })
 
+function addAnimation(){
+    projectTitle.classList.add('animation')
+    descs.classList.add('animation')
+}
 
+function timeOut(){
+    setTimeout(() => {
+        projectTitle.classList.remove("animation")
+        descs.classList.remove('animation')
+      }, 1000);
+}
+
+arrowUp.addEventListener("click",()=>{
+    window.scrollTo(0,0)
+})
 
  
    
