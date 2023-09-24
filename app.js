@@ -113,6 +113,16 @@ arrowUp.addEventListener("click",()=>{
     window.scrollTo(0,0)
 })
 
+// Scroll Animation
+
+const observer = new IntersectionObserver((entry)=>{
+    if(entry.IsIntersecting) {
+        entry.target.classList.add('show');
+    }
+});
+ 
+const hiddenElement = document.querySelector('.hidden')
+observer.observe(hiddenElement)
  
    
       
