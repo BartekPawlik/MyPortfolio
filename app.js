@@ -40,6 +40,7 @@ const descs = document.querySelector('.desc')
 const panels = document.querySelectorAll('.card-inner')
 const arrowUp = document.querySelector(".arrow")
 
+
 let px = 701
 let sum = 0
 let pictureNumber = 0
@@ -114,21 +115,36 @@ arrowUp.addEventListener("click",()=>{
 })
 
 // Scroll Animation
+const observer = new IntersectionObserver((entries)=>{
 
-const observer = new IntersectionObserver((entry)=>{
-    if(entry.IsIntersecting) {
-        entry.target.classList.add('show');
-    }
+   entries.forEach((entry)=>{
+    
+    console.log(entry.isIntersecting)
+    if(entry.isIntersecting ){
+        entry.target.classList.add('show')
+        console.log(entry.isIntersecting)
+        
+    } 
+   });
 });
  
-const hiddenElement = document.querySelector('.hidden')
-observer.observe(hiddenElement)
- 
-   
-      
-    
+const hiddenElements = document.querySelectorAll('.hidden')
+hiddenElements.forEach((el)=> observer.observe(el))
 
-   
-     
+const contactPage = document.querySelector('.next-page')
+const transition = document.querySelector(".transition")
+
+
+contactPage.addEventListener("click", e=>{
+   e.preventDefault()
+    transition.classList.add("is-active")
+    setTimeout(() => {
+        transition.classList.remove('is-active')
+    }, 800);
+
+    setTimeout(() => {
+        window.location = "http://127.0.0.1:5501/Contactpage/contact.html"
+    }, 600);
+})
     
-  
+   
