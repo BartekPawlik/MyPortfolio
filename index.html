@@ -1,168 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Mulish:ital@1&family=Noto+Sans:ital,wght@0,400;1,300&family=Poppins:ital,wght@0,100;0,300;1,100;1,200;1,300&display=swap" rel="stylesheet">
-  </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat&family=Mulish:ital@1&family=Noto+Sans:ital,wght@0,400;1,300&family=Poppins:ital,wght@0,100;0,300;1,100;1,200;1,300&display=swap"
+    rel="stylesheet">
+</head>
+
 <body>
   <div class="transition "></div>
   <header>
     <div class="nav-container">
-        <h2 class="title">Port<span>folio</span></h2>
-        <ul>
-            <li><a href="#section-1">Home</a></li>
-            <li><a href="#section-2">About</a></li>
-            <li><a href="#section-3">Projects</a></li>
-            <li><a href="#section-4">Contact</a></li>
-            
-        </ul>
+      <h2 class="title">Port<span>folio</span></h2>
+      
+      <ul>
+        <li><a href="#section-1">Home</a></li>
+        <li><a href="#section-2">About</a></li>
+        <li><a href="#section-3">Projects</a></li>
+        <li><a href="#section-4">Contact</a></li>
+      </ul>
     </div>
   </header>
   <!-- Home section -->
-    <section id="section-1" class="hidden">
-      <div class="home-container ">
-        <div class="intorduce">
-          <h2>Hello<br><span>My name is</span><br>Bartłomiej Pawlik <br>And I`m <span>Web Deweloper</span></h2>
-          <button class="contact-btn" ><a class="next-page" href="/Contactpage/contact.html">Contact</a></button>
+  <section id="section-1" class="hidden">
+    <div class="home-container ">
+      <div class="intorduce">
+        <h2>Hello<br><span>My name is</span><br>Bartłomiej Pawlik <br>And I`m <span>Web Developer</span></h2>
+        <button class="contact-btn"><a class="next-page" href="/Contactpage/contact.html">Contact</a></button>
+      </div>
+      <div class="img-container">
+        <img width="597px" height="600px" src="imgs/profile.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- About section -->
+
+  <section id="section-2">
+    <div class="about-section hidden ">
+      <div class="img-container">
+        <img width="597px" height="600px" src="imgs/About.png" alt="">
+      </div>
+      <div class="aboutme">
+        <h2 class="title"><span>Pro</span>gramming</h2>
+        <p>My joreney with programing started year ago. <br>
+          At the begining i focused on the basic <br>
+          HTML5 and CSS. Now I'm creting <br>
+          applications and website by the use of JavaScrip and I'm expanding my knowledge about React.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects section -->
+
+  <section id="section-3">
+    <div class="project-section">
+      <div class="project-titles">
+        <h2 class="title"><span>My</span> Projects</h2>
+        <h2 class="project-title"></h2>
+        <p class="desc"></p>
+      </div>
+      
+      <div class="slide-container">
+        <a><i class="fa-solid fa-angles-left"></i></i></a>
+        <div class="box">
+          <div class="imgs-container">
+            <img height="500px" width="700px" src="project/Recipe.PNG" alt="">
+            <img height="500px" width="700px" src="project/game.PNG" alt="">
+            <img height="500px" width="700px" src="project/color.PNG" alt="">
+            <img height="500px" width="700px" src="project/weatherapp.PNG" alt="">
+            <img height="500px" width="700px" src="project/shopingCart.PNG" alt="">
+          </div>
         </div>
+        <a><i class="fa-solid fa-angles-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+
+  <section id="section-4">
+
+    <div class="container">
+      <div class="title-contact">
+        <h2>Contact Me</h2>
+      </div>
+      <div class="contact-section">
         <div class="img-container">
-          <img width="597px" height="600px" src="imgs/profile.jpg" alt="">
+          <img height="597px" width="600px" src="imgs/contact1.jpg" alt="">
         </div>
-      </div>
-    </section>
-<!-- About section -->
 
-<section id="section-2 hidden" class="hidden" >
-  <div class="about-section ">
-    <div class="img-container">
-      <img width="597px" height="600px" src="imgs/About.png" alt="">
-    </div>
-    <div class="aboutme">
-      <h2 class="title"><span>Pro</span>graming</h2>
-      <p>My joreney with programing started year ago. <br>
-         At the begining i focused on the basic <br>
-        HTML5 and CSS. Now I'm creting <br>
-        applications and website by the use of JavaScrip and I'm expanding my knowledge about React.</p>
-      </div>
-
-    
-  </div>
-</section>
-<!-- Projects section -->
-<section id="section-3">
-  <div class="project-section">
-    <div class="project-titles">
-      <h2 class="title"><span>My</span> Projects</h2>
-      <h2 class="project-title"></h2>
-      <p class="desc" ></p>
-    </div>
-   
-
-    <div class="slide-container">
-      <a><i class="fa-solid fa-angles-left"></i></i></a>
-
-          <div class="box">
-        <div class="imgs-container">
-          <img height="500px" width="700px" src="project/Recipe.PNG" alt="">
-          <img height="500px" width="700px" src="project/game.PNG" alt="">
-          <img height="500px" width="700px" src="project/color.PNG" alt="">
-          <img height="500px" width="700px" src="project/weatherapp.PNG" alt="">
-          <img height="500px" width="700px" src="project/shopingCart.PNG" alt="">
-
-        </div>
-        
-        
-      </div>
-      <a><i class="fa-solid fa-angles-right"></i></a>
-
-    </div>
-    
-  </div>
-  
-</section>
-
-<!-- Contact section -->
-
-<section id="section-4">
-
- <div class="container">
-  <div class="title-contact"> <h2 >Contact Me</h2></div>
-  
-
-  <div class="contact-section">  
-    <div class="img-container">
-      <img height="597px" width="600px" src="imgs/contact1.jpg" alt="">
-    </div>
-  
-    <div class="contact-container">  
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-face card-face-front"> 
-            <i class="fa-brands fa-github"></i>
+        <div class="contact-container">
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-face card-face-front">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <div class="card-face card-face-back">
+                <a class="heading" target="_blank"
+                  href="https://github.com/BartekPawlik?tab=repositories">My<br>Github</a>
+                <i class="fa-brands fa-github"></i>
+              </div>
+            </div>
           </div>
-          <div class="card-face card-face-back"> 
-            <a class="heading" target="_blank" href="https://github.com/BartekPawlik?tab=repositories">My<br>Github</a>
-            <i class="fa-brands fa-github"></i>           
-          </div>
-          </div>
-      </div>
-     
-    <div class="card">
-      <div class="card-inner">
-        <div class="card-face card-face-front">
-          <i class="fa-solid fa-envelope"></i>
-           </div>
-           <div class="card-face card-face-back">
-            <p class="heading">email contact</p>
-        <p class="mail">pawlikbartlomiej98@gmail.com</p>
-        <i class="fa-solid fa-envelope"></i>
 
-           </div>
-       </div> 
-    </div>
-  
-    <div class="card">
-      <div class="card-inner">
-        <div class="card-face card-face-front">
-        <i class="fa-brands fa-linkedin"></i>
-     </div>
-     <div class="card-face card-face-back">
-      <a class="heading" target="_blank" href="https://www.linkedin.com/in/bartek-pawlik-b45956271/">My<br>Linkdin</a>
-      <i class="fa-brands fa-linkedin"></i>
-     </div>
-    </div>       
-    
-     </div>
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-face card-face-front">
-            <i class="fa-solid fa-phone"></i>
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-face card-face-front">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="card-face card-face-back">
+                <p class="heading">email contact</p>
+                <p class="mail">pawlikbartlomiej98@gmail.com</p>
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+            </div>
           </div>
-          <div class="card-face card-face-back">
-            <p class="heading">My Number</p>
-          <p class="phone-number">+48570435892</p>
-          <i class="fa-solid fa-phone"></i>    
+
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-face card-face-front">
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+              <div class="card-face card-face-back">
+                <a class="heading" target="_blank"
+                  href="https://www.linkedin.com/in/bartek-pawlik-b45956271/">My<br>Linkdin</a>
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+            </div>
+
+          </div>
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-face card-face-front">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="card-face card-face-back">
+                <p class="heading">My Number</p>
+                <p class="phone-number">+48570435892</p>
+                <i class="fa-solid fa-phone"></i>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
- </div>
- </section>
+  </section>
+  
+  <!-- footer -->
 
-<section id="section-5" >
-  <div class="footer-section">
+  <section id="section-5">
+    <div class="footer-section">
       <div class="copyright">
         <div class="arrow"><i class="  fa-solid fa-arrow-up-from-bracket"></i></div>
         <p>©2023 Bartek Pawlik Portfolio Poland. All rights reserved</p>
       </div>
-   </div>
-</section>
-<script src="app.js"></script>
-</body>
-</html>
+    </div>
+  </section>
+  <script src="app.js"></script>
 
+
+</body>
+  
+</html>

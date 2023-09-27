@@ -1,6 +1,8 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 8rem;
+  width: 100%;
+  height: 100%;
 }
 
 * {
@@ -284,7 +286,9 @@ section {
 .container .contact-section .contact-container .card-inner .phone-number {
   font-size: 1rem;
 }
-.container .contact-section .contact-container p, .container .contact-section .contact-container i, .container .contact-section .contact-container a {
+.container .contact-section .contact-container p,
+.container .contact-section .contact-container i,
+.container .contact-section .contact-container a {
   font-size: 3rem;
   background-color: transparent;
   background-color: transparent;
@@ -419,4 +423,38 @@ section {
 .is-active {
   opacity: 1;
   pointer-events: all;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-container {
+    margin-top: 0;
+  }
+  .nav-container ul {
+    display: none;
+  }
+  #section-1 {
+    margin-top: 50px;
+  }
+  .home-container {
+    flex-direction: row-reverse;
+    align-items: start;
+  }
+  .home-container .intorduce {
+    margin-top: 30px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    flex-direction: column;
+  }
+  .home-container .intorduce h2 {
+    font-size: 1.4rem;
+  }
+  .home-container img {
+    height: 300px;
+    width: 300px;
+  }
+  #section-2 {
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */
