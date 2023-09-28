@@ -131,7 +131,7 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.hidden')
 hiddenElements.forEach((el) => observer.observe(el))
 
-const contactPage = document.querySelector('.next-page')
+const contactPage = document.querySelector('.contact-btn')
 const transition = document.querySelector(".transition")
 
 
@@ -146,5 +146,13 @@ contactPage.addEventListener("click", e => {
         window.location = "http://127.0.0.1:5501/Contactpage/contact.html"
     }, 600);
 })
+
+const burger = document.querySelector(".hamburger")
+const menu = document.querySelector(".menu")
+burger.addEventListener("click", ()=>{
+ menu.classList.toggle("burger-run")
+
+})
+
 
 
