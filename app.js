@@ -41,9 +41,22 @@ const panels = document.querySelectorAll('.card-inner')
 const arrowUp = document.querySelector(".arrow")
 
 
-let px = 701
+
+let px = 0
 let sum = 0
 let pictureNumber = 0
+
+function mediaPx(){
+    const x = window.matchMedia("(max-width: 600px)")
+
+if (x.matches){
+    px = 251
+}else{
+    px = 701
+}
+
+}
+mediaPx()
 
 
 checkInfo()
@@ -58,7 +71,7 @@ rightArrow.addEventListener("click", () => {
     console.log(sum)
     leftArrow.style.visibility = "unset";
     projectbox.style.left = `${sum}px`
-    if (sum == -2804) {
+    if (pictureNumber == 4) {
         rightArrow.style.visibility = "hidden"
         projectTitle
     }
@@ -152,7 +165,16 @@ const menu = document.querySelector(".menu")
 burger.addEventListener("click", ()=>{
  menu.classList.toggle("burger-run")
 
+
 })
 
 
 
+const section = document.querySelectorAll('.section')
+section.forEach(sec => {
+    sec.addEventListener('click', ()=>{
+        menu.classList.remove("burger-run")
+       
+        
+    })
+})
