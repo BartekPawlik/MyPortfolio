@@ -272,15 +272,15 @@ section {
 .container .contact-section .contact-container .card-inner .card-face-back p {
   font-size: 0.4rem;
 }
-.container .contact-section .contact-container .card-inner .mail {
+.container .contact-section .contact-container .card-inner .card-face-back .mail {
   font-size: 1rem;
 }
-.container .contact-section .contact-container .card-inner .heading {
+.container .contact-section .contact-container .card-inner .card-face-back .heading {
   color: white;
   transition: 0.2s ease-in-out;
   font-size: 1.8rem;
 }
-.container .contact-section .contact-container .card-inner .phone-number {
+.container .contact-section .contact-container .card-inner .card-face-back .phone-number {
   font-size: 1rem;
 }
 .container .contact-section .contact-container p,
