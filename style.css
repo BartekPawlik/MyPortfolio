@@ -184,17 +184,32 @@ section {
   border-radius: 10px;
   display: flex;
   justify-content: center;
-  position: relative;
+  z-index: 100;
   overflow: hidden;
 }
 .project-section .slide-container .box .imgs-container {
+  width: 100%;
+  height: 100%;
   display: flex;
-  position: absolute;
+  position: relative;
   transition: 0.5s ease-in-out;
-  left: 0px;
+  z-index: 1;
 }
-.project-section .slide-container .box .imgs-container img {
+.project-section .slide-container .box .imgs-container .show-img {
+  visibility: hidden;
   border-radius: 10px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  left: 100%;
+  right: 100%;
+}
+.project-section .slide-container .box .imgs-container .pick-img {
+  visibility: visible;
+  left: 0;
+  right: 0;
+  transition: 0.5s ease-in-out;
 }
 
 .container {

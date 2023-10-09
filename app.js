@@ -39,6 +39,9 @@ const projectTitle = document.querySelector(".project-title")
 const descs = document.querySelector('.desc')
 const panels = document.querySelectorAll('.card-inner')
 const arrowUp = document.querySelector(".arrow")
+const pickImg = document.querySelector('.pick-img')
+const imgs = document.querySelectorAll('.show-img')
+const rightSide = document.querySelectorAll('.right-side')
 
 
 
@@ -63,36 +66,68 @@ checkInfo()
 
 
 
-rightArrow.addEventListener("click", () => {
+// rightArrow.addEventListener("click", () => {
+//     addAnimation()
+//     pictureNumber++
+//     console.log(pictureNumber)
+//     sum -= px
+//     console.log(sum)
+//     leftArrow.style.visibility = "unset";
+//     projectbox.style.left = `${sum}px`
+//     if (pictureNumber == 4) {
+//         rightArrow.style.visibility = "hidden"
+//         projectTitle
+//     }
+//     checkInfo()
+//     timeOut()
+
+// })
+
+// leftArrow.addEventListener("click", () => {
+//     addAnimation()
+//     pictureNumber--
+//     sum += px
+//     console.log(px)
+
+//     rightArrow.style.visibility = "unset";
+//     projectbox.style.left = `${sum}px`
+//     if (sum == 0) {
+//         leftArrow.style.visibility = "hidden"
+//     }
+//     checkInfo()
+//     timeOut()
+// })
+
+rightArrow.addEventListener("click",()=> {
     addAnimation()
     pictureNumber++
-    console.log(pictureNumber)
-    sum -= px
-    console.log(sum)
-    leftArrow.style.visibility = "unset";
-    projectbox.style.left = `${sum}px`
-    if (pictureNumber == 4) {
-        rightArrow.style.visibility = "hidden"
-        projectTitle
-    }
-    checkInfo()
-    timeOut()
-
+       leftArrow.style.visibility = "unset";
+        imgs[pictureNumber].classList.add('pick-img')
+        if (pictureNumber == 4) {
+                rightArrow.style.visibility = "hidden"
+                 projectTitle
+                rightSide.forEach(side =>{
+                    side.style.right = "100%"
+                })
+                console.log(pictureNumber)
+             
+        }
+        checkInfo()
+        timeOut()
 })
 
-leftArrow.addEventListener("click", () => {
+leftArrow.addEventListener("click" ,()=>{
     addAnimation()
     pictureNumber--
-    sum += px
-
     rightArrow.style.visibility = "unset";
-    projectbox.style.left = `${sum}px`
-    if (sum == 0) {
+    imgs[pictureNumber + 1].classList.remove('pick-img')
+        if (pictureNumber == 0) {
         leftArrow.style.visibility = "hidden"
     }
     checkInfo()
     timeOut()
 })
+
 
 function checkInfo() {
 
