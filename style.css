@@ -203,12 +203,11 @@ section {
   height: 100%;
   z-index: 1;
   left: 100%;
-  right: 100%;
+  transition: 0.5s ease-in-out;
 }
 .project-section .slide-container .box .imgs-container .pick-img {
   visibility: visible;
   left: 0;
-  right: 0;
   transition: 0.5s ease-in-out;
 }
 
@@ -437,294 +436,6 @@ section {
   pointer-events: all;
 }
 
-@media only screen and (max-width: 620px) {
-  .nav-container {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 0;
-  }
-  .nav-container .title {
-    margin-top: 0px;
-    font-size: 1.9rem;
-  }
-  .nav-container .hamburger {
-    position: absolute;
-    font-size: 1.2rem;
-    display: block;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-    top: 24px;
-    right: 10px;
-  }
-  .nav-container .hamburger :hover {
-    color: crimson;
-  }
-  .nav-container .burger-run {
-    height: 200px;
-  }
-  .nav-container ul {
-    height: 0;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: 1s ease-in-out;
-  }
-  .nav-container ul li {
-    font-size: 1rem;
-  }
-  #section-1 {
-    margin-top: 50px;
-  }
-  .home-container {
-    width: 90%;
-    height: 200px;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: start;
-    position: relative;
-  }
-  .home-container .intorduce {
-    width: 100%;
-    margin-left: 26px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-  .home-container .intorduce h2 {
-    font-size: 1.5rem;
-  }
-  .home-container .intorduce .contact-btn {
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 40px;
-    text-align: center;
-  }
-  .home-container .intorduce button {
-    border-radius: 4px;
-    width: 120px;
-    height: 30px;
-    background-color: crimson;
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: white;
-    letter-spacing: 1px;
-    transition: 0.3s ease-in-out;
-  }
-  .home-container .intorduce button :hover {
-    color: crimson;
-    background-color: white;
-  }
-  .home-container .img-container img {
-    height: 120px;
-    width: 120px;
-  }
-  #section-2 {
-    margin-top: 12px;
-  }
-  .about-section {
-    width: 100%;
-    height: 450px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .about-section img {
-    height: 200px;
-    width: 200px;
-  }
-  .about-section .aboutme {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .about-section .aboutme .title {
-    font-size: 1.6rem;
-    margin-top: 7px;
-    margin-bottom: 0;
-    text-align: center;
-  }
-  .about-section .aboutme p {
-    margin-top: 10px;
-    font-size: 0.9rem;
-    text-align: center;
-  }
-  #section-3 {
-    margin-top: 20px;
-  }
-  .project-section {
-    width: 100%;
-    height: 450px;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-  }
-  .project-section .project-titles {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .project-section .project-titles .project-title {
-    font-size: 2rem;
-    min-width: 0px;
-  }
-  .project-section .project-titles .title {
-    font-size: 1.9rem;
-    margin-top: 20px;
-    margin-bottom: 5px;
-  }
-  .project-section .project-titles .desc {
-    width: 300px;
-    font-size: 1rem;
-    text-align: center;
-  }
-  .project-section .slide-container {
-    display: flex;
-    align-items: center;
-  }
-  .project-section .slide-container i {
-    font-size: 0.5rem;
-    transition: 0.1s ease-in-out;
-    cursor: pointer;
-    margin: 8px;
-    font-size: 1px;
-  }
-  .project-section .slide-container .fa-solid {
-    font-size: 2rem;
-  }
-  .project-section .slide-container .box {
-    width: 250px;
-    height: 180px;
-    border: 4px solid crimson;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-  }
-  .project-section .slide-container .box .imgs-container {
-    display: flex;
-    position: absolute;
-    transition: 0.5s ease-in-out;
-    left: 0px;
-  }
-  .project-section .slide-container .box .imgs-container img {
-    border-radius: 10px;
-    width: 250px;
-    height: 200px;
-  }
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .container .title-contact {
-    padding-bottom: 40px;
-    font-size: 2.5rem;
-    color: white;
-    letter-spacing: 1px;
-  }
-  #section-4 {
-    margin-top: 50px;
-  }
-  #section-4 .container {
-    height: 470px;
-    margin-top: 0px;
-  }
-  #section-4 .container .title-contact {
-    padding-bottom: 0px;
-  }
-  #section-4 .container .title-contact h2 {
-    font-size: 1.9rem;
-  }
-  #section-4 .contact-section {
-    height: 500px;
-    justify-content: start;
-    flex-direction: column;
-    align-items: center;
-  }
-  #section-4 .contact-section img {
-    margin-top: 20px;
-    width: 200px;
-    height: 200px;
-  }
-  #section-4 .contact-section .contact-container {
-    margin-top: 30px;
-    display: grid;
-    width: 180px;
-    height: 180px;
-    grid-template-columns: 1fr 1fr;
-    font-size: 1rem;
-    gap: 19px;
-  }
-  #section-4 .contact-section .contact-container .card {
-    width: 80px;
-    height: 80px;
-  }
-  #section-4 .contact-section .contact-container .card-inner .card-face-front {
-    background-color: crimson;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  #section-4 .contact-section .contact-container .card-inner .card-face-front i {
-    font-size: 1.4rem;
-  }
-  #section-4 .contact-section .contact-container .card-inner .card-face-back {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: rgb(0, 0, 0);
-    transform: rotateY(180deg);
-  }
-  #section-4 .contact-section .contact-container .card-inner .card-face-back i {
-    margin-top: 1px;
-    font-size: 1rem;
-    color: crimson;
-  }
-  #section-4 .contact-section .contact-container .card-inner .card-face-back a {
-    font-size: 10px;
-  }
-  #section-4 .contact-section .contact-container .card-inner .card-face-back .mail {
-    font-size: 4px;
-  }
-  #section-5 {
-    margin-top: 60px;
-  }
-  .footer-section {
-    height: 80px;
-  }
-  .footer-section .copyright .arrow {
-    position: absolute;
-    right: 20px;
-    top: 30px;
-    cursor: pointer;
-  }
-  .footer-section .copyright .arrow i {
-    font-size: 1rem;
-    color: white;
-    background-color: crimson;
-  }
-  .footer-section .copyright P {
-    text-align: center;
-    background-color: inherit;
-    color: white;
-    font-size: 0.6rem;
-  }
-}
 @media only screen and (max-width: 600px) {
   .nav-container {
     position: relative;
@@ -766,18 +477,19 @@ section {
     font-size: 1rem;
   }
   #section-1 {
-    margin-top: 50px;
+    margin-top: 10px;
   }
   .home-container {
     width: 90%;
-    height: 200px;
-    flex-direction: row-reverse;
+    height: 450px;
+    flex-direction: column-reverse;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     position: relative;
   }
   .home-container .intorduce {
     width: 100%;
+    margin-top: 20px;
     margin-left: 26px;
     display: flex;
     justify-content: center;
@@ -791,13 +503,14 @@ section {
     position: absolute;
     right: 0;
     left: 0;
-    bottom: 40px;
+    margin: auto;
+    bottom: 0px;
     text-align: center;
   }
   .home-container .intorduce button {
     border-radius: 4px;
-    width: 120px;
-    height: 30px;
+    width: 140px;
+    height: 36px;
     background-color: crimson;
     color: white;
     text-decoration: none;
@@ -811,11 +524,11 @@ section {
     background-color: white;
   }
   .home-container .img-container img {
-    height: 120px;
-    width: 120px;
+    height: 200px;
+    width: 200px;
   }
   #section-2 {
-    margin-top: 12px;
+    margin-top: 30px;
   }
   .about-section {
     width: 100%;
@@ -851,7 +564,7 @@ section {
   }
   .project-section {
     width: 100%;
-    height: 450px;
+    height: 550px;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
@@ -877,39 +590,66 @@ section {
     text-align: center;
   }
   .project-section .slide-container {
+    width: 100%;
     display: flex;
     align-items: center;
+    position: relative;
   }
-  .project-section .slide-container i {
-    font-size: 0.5rem;
-    transition: 0.1s ease-in-out;
-    cursor: pointer;
-    margin: 8px;
-    font-size: 1px;
+  .project-section .slide-container .fa-angles-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 5px;
+    margin: auto 0;
+    z-index: 100;
+    background-color: transparent;
+    color: rgba(19, 18, 18, 0.4);
+  }
+  .project-section .slide-container .fa-angles-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 5px;
+    margin: auto 0;
+    z-index: 100;
+    background-color: transparent;
+    color: rgba(19, 18, 18, 0.4);
   }
   .project-section .slide-container .fa-solid {
     font-size: 2rem;
   }
   .project-section .slide-container .box {
-    width: 250px;
-    height: 180px;
-    border: 4px solid crimson;
-    border-radius: 10px;
+    width: 100%;
+    height: 280px;
+    border: none;
     display: flex;
     justify-content: center;
     position: relative;
     overflow: hidden;
+    z-index: 2;
+    border-radius: 0px;
   }
   .project-section .slide-container .box .imgs-container {
+    border-radius: none;
     display: flex;
     position: absolute;
     transition: 0.5s ease-in-out;
     left: 0px;
+    border-radius: 0px;
+  }
+  .project-section .slide-container .box .imgs-container .show-img {
+    border-radius: 0;
   }
   .project-section .slide-container .box .imgs-container img {
-    border-radius: 10px;
     width: 250px;
     height: 200px;
+    border-radius: 0px;
   }
   .container {
     display: flex;
@@ -1020,9 +760,96 @@ section {
     font-size: 0.6rem;
   }
 }
-@media (min-width: 620px) and (max-width: 1500px) {
-  #section-3 {
+@media (min-width: 600px) and (max-width: 1500px) {
+  .nav-container {
+    justify-content: start;
+  }
+  .nav-container .menu {
+    width: 100px;
+  }
+  .nav-container .menu li a {
+    font-size: 1.6rem;
+  }
+  #section-1 {
+    margin-top: 0px;
+  }
+  .home-container {
+    width: 90%;
+    height: 800px;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .home-container .intorduce {
+    width: 100%;
     margin-top: 20px;
+    margin-left: 26px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home-container .intorduce h2 {
+    font-size: 3rem;
+  }
+  .home-container .intorduce .contact-btn {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    bottom: 0px;
+    text-align: center;
+  }
+  .home-container .intorduce button {
+    border-radius: 4px;
+    width: 180px;
+    height: 46px;
+    background-color: crimson;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    letter-spacing: 1px;
+    transition: 0.3s ease-in-out;
+  }
+  .home-container .intorduce button :hover {
+    color: crimson;
+    background-color: white;
+  }
+  .home-container .img-container img {
+    height: 400px;
+    width: 400px;
+  }
+  .about-section {
+    margin-top: 0;
+    width: 100%;
+    flex-direction: column;
+  }
+  .about-section img {
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    border: 3px solid crimson;
+  }
+  .about-section .aboutme {
+    width: 80%;
+    text-align: center;
+  }
+  .about-section .aboutme .title {
+    font-size: 3rem;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .about-section .aboutme .title span {
+    color: crimson;
+  }
+  .about-section .aboutme p {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+  #section-3 {
+    margin-top: 60px;
   }
   .project-section {
     width: 100%;
@@ -1038,7 +865,7 @@ section {
     align-items: center;
   }
   .project-section .project-titles .project-title {
-    font-size: 2rem;
+    font-size: 3rem;
     min-width: 0px;
   }
   .project-section .project-titles .title {
@@ -1047,33 +874,61 @@ section {
     margin-bottom: 5px;
   }
   .project-section .project-titles .desc {
-    width: 300px;
-    font-size: 1rem;
+    width: 600px;
+    font-size: 1.5rem;
     text-align: center;
   }
   .project-section .slide-container {
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 1;
   }
   .project-section .slide-container i {
-    font-size: 0.5rem;
     transition: 0.1s ease-in-out;
     cursor: pointer;
     margin: 8px;
     font-size: 1px;
   }
+  .project-section .slide-container .fa-angles-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 10px;
+    margin: auto 0;
+    z-index: 100;
+    background-color: transparent;
+    color: rgba(19, 18, 18, 0.4);
+  }
+  .project-section .slide-container .fa-angles-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 10px;
+    margin: auto 0;
+    z-index: 100;
+    background-color: transparent;
+    color: rgba(19, 18, 18, 0.4);
+  }
   .project-section .slide-container .fa-solid {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .project-section .slide-container .box {
-    height: 503px;
-    width: 703px;
+    height: 403px;
+    width: 603px;
     border: 4px solid crimson;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     position: relative;
     overflow: hidden;
+    z-index: 2;
   }
   .project-section .slide-container .box .imgs-container {
     display: flex;
@@ -1093,13 +948,13 @@ section {
     align-items: center;
   }
   .container .title-contact {
-    padding-bottom: 40px;
+    padding-bottom: 10px;
     font-size: 2.5rem;
     color: white;
     letter-spacing: 1px;
   }
   #section-4 {
-    margin-top: 30px;
+    margin-top: 10px;
   }
   #section-4 .container {
     height: 1200px;
@@ -1113,8 +968,8 @@ section {
   }
   #section-4 .contact-section {
     height: 1000px;
-    justify-content: center;
     flex-direction: column;
+    justify-content: start;
     align-items: center;
   }
   #section-4 .contact-section img {

@@ -49,17 +49,8 @@ let px = 0
 let sum = 0
 let pictureNumber = 0
 
-function mediaPx(){
-    const x = window.matchMedia("(max-width: 600px)")
 
-if (x.matches){
-    px = 251
-}else{
-    px = 701
-}
 
-}
-mediaPx()
 
 
 checkInfo()
@@ -106,12 +97,17 @@ rightArrow.addEventListener("click",()=> {
         if (pictureNumber == 4) {
                 rightArrow.style.visibility = "hidden"
                  projectTitle
-                rightSide.forEach(side =>{
-                    side.style.right = "100%"
-                })
-                console.log(pictureNumber)
+              
+
+            
+                
+            
+                
+             
              
         }
+
+        
         checkInfo()
         timeOut()
 })
